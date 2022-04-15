@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+
+    <link rel='stylesheet' href='static\styles\index.css'/>    
+    <title>Home Page</title>>
+</head>
+
+<body>
+    <h1>Banking Marketing App</h1>
+    <p>welcome to our Banking App.</p><br>
+    <p>Objective: Bank term deposit would be subscribed ('yes') or not ('no') by clients.</p>
+
+    <form action="/predict" method="POST">
+        <label for="month">Month</label><br>
+        <select id="month" name="month">
+            <option value="mar">Mar</option>
+            <option value="may">May</option>
+            <option value="sep">Sep</option>
+            <option value="oct">Oct</option>
+            <option value="dec">Dec</option>
+            <option value="others">Others</option>
+            </select><br><br>
+
+        <label for="evr">Employment variation rate</label><br>
+        <input type="number" step="0.1" id="evr" name="evr"><br>
+
+        <label for="contact">Contact Method</label><br>
+        <select id="contact" name="contact">
+            <option value="telephone">Telephone</option>
+            <option value="cellular">Cellular</option>
+            </select><br><br>
+
+        <label for="duration">Duration</label><br>
+        <input type="number" id="duration" name="duration"><br>
+
+        <label for="house">House</label><br>
+        <select id="house" name="house">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            </select><br><br>
+
+        <label for="campaign">Campaign</label><br>
+        <input type="number" id="campaign" name="campaign"><br><br>
+
+        <label for="marital">Marital Status</label><br>
+        <select id="marital" name="marital">
+            <option value="married">Married</option>
+            <option value="single">Single</option>
+            </select>><br><br>
+
+        <label for="poutcome">Previous Outcome Campaign</label><br>
+        <select id="poutcome" name="poutcome">
+            <option value="success">Success</option>
+            <option value="failed">Failed</option>
+            </select><br><br>
+
+        <label for="previous">Calls</label><br>
+        <input type="number" id="previous" name="previous"><br>
+
+        <label for="education">Education</label><br>
+        <select id="education" name="education">
+            <option value="university_degree">University degree</option>
+            <option value="others">Others</option>
+            </select><br><br>
+
+
+            <input type="submit" value="predict"> 
+
+    </form>
+</body>
